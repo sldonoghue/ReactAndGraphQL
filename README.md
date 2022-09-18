@@ -7,7 +7,7 @@ Front End:
 
 Back End:
 ~ Keystone (Headless CMS)
-~ MongoDB
+~ MongoDB Atlas
 
 Testing:
 ~ Jest
