@@ -1,19 +1,18 @@
 // Allows for custom document markup
-
-import Document, { Html } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
+    static getInitialProps({renderPage}) {
+        const sheet = new ServerStyleSheet();
+        const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
+        const styleTags = sheet.getStyleElement();
+        return { ...page, styleTags };
+    }
     render() {
         return (
         <Html>
-            <Head>
-                <meta charSet="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="shortcut icon" href="/static/favicon.png" />
-                <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-                <link rel="stylesheet" type="text/css" href="/static/styles.css" />
-                <title>Test Store App</title>
-            </Head>
+            <Head />
             <body>
                 <Main />
                 <NextScript />
