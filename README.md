@@ -1,8 +1,13 @@
 # ReactAndGraphQL
 
-Tech Stack:
-Mongo DB
-Keystone JS
-React
-GraphQL
-Next
+Front End:
+~ React
+~ Next JS
+~ Apollo Client/ GraphQL
+
+Back End:
+~ Keystone (Headless CMS)
+~ MongoDB
+
+Testing:
+~ Jest
