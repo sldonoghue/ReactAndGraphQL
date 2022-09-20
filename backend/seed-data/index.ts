@@ -6,6 +6,7 @@ export async function insertSeedData(ks: any) {
   const adapter = keystone.adapters?.MongooseAdapter || keystone.adapter;
 
   console.log(`🌱 Inserting Seed Data: ${products.length} Products`);
+  
   const { mongoose } = adapter;
   for (const product of products) {
     console.log(`  🛍️ Adding Product: ${product.name}`);
