@@ -8,7 +8,7 @@ function timestamp() {
 export const products = [
   {
     name: 'Yeti Hondo',
-    description: 'soo nice',
+    description: 'Yeti Hondo',
     status: 'AVAILABLE',
     price: 3423,
     photo: {
@@ -125,7 +125,7 @@ export const products = [
   },
   {
     name: 'Fanorak',
-    description: 'Super hip. Comes in a number of colours',
+    description: 'Comes in a number of colours',
     status: 'AVAILABLE',
     price: 252342,
     photo: {
