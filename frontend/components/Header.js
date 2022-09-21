@@ -4,16 +4,17 @@ import styled from 'styled-components';
 import Nav from './Nav';
 
 const LogoStyles = styled.h1`
+  background: var(--blue);
   font-size: 4rem;
   margin-left: 2rem;
   position: relative;
   z-index: 2;
-  background: var(--blue, blue);
+  transform: skew(-7deg);
   a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     text-transform: uppercase;
+    padding: 0.5rem 1rem;
   }
 `;
 
@@ -45,12 +46,12 @@ export default function Header() {
             React Store
           </Link>
         </LogoStyles>
+        <Nav />
       </div>    
       
       <div className="sub-bar">
         <p>Search</p>
       </div>  
-      <Nav />
     </HeaderStyles>
   );
 }

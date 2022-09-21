@@ -1,5 +1,2 @@
-export default function IndexPage() {
-  return (
-    <div>Home Page</div>
-  )
-}
+// Show product page as home page
+export { default } from './products';
